@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+ body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+main {
+  width: 100%;
+ 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main h1{
+    
+    color: #286e65;
+    font-size: 2.7rem;
+
+
+}
+
+
+section.formulaire {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 14px;
+  box-shadow: 0 0px 10px #286e65;
+  width: 100%;
+
+  background-image: url("Images/freepik__talk__97353-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:-30%;
+  padding:10px 20px;
+  overflow: hidden;
+
+}
+.title-div {
+  flex-direction: row;
+  display: flex;
+  justify-content:space-between;
+  gap: 5%;
+
+  align-items: center;
+  
+}
+ .title-div #logo{
+
+  width: 70px;
+  height: 70px;
+  color: #286e65;
+
+}
+
+
+.form-all {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+ max-width:  420px;
+  margin-right: 3%;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #286e65;
+  box-shadow: 0 10px 15px #286e65;
+}
+
+.form-all .div-h2 {
+  background:#286e65;
+  padding: 8px;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+
+.form-all h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.form-all form {
+  display: flex;
+  flex-direction: column;
+  /* gap: px; */
+  padding: 17px 20px;
+  width: 100%;
+}
+
+.form-all label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-all input,
+.form-all textarea {
+  padding: 3px 12px;
+  border-radius: 8px;
+  border: 1px solid #286e65;
+  font-size: 14px;
+}
+
+.form-all input:focus,
+.form-all textarea:focus {
+  border: 1px solid #286e65;
+  outline: none;
+  box-shadow: 0 0 10px #286e65;
+}
+
+.form-all input[type="submit"] {
+  margin-top: 13px;
+  background: #286e65;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  letter-spacing: 0.9px;
+}
+
+.form-all input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 79, 73, 0.35);
+}
+
+.form-all .msg {
+  margin-top: auto;
+  padding: 10px;
+  width: 100%;
+  border-top: 2px solid #286e65;
+  background: #286e65;
+  border-radius: 0 0 12px 12px;
+}
+
+.form-all .msg p {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#icons-done {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+
+
+
+section.tableau {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0px 10px #286e65;
+}
+
+.tableau h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #286e65;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+.tableau .div-table{
+  /* table kaydar lih scrol blama ndirha la page kamela */
+  overflow: auto;
+}
+
+.tableau table {
+  width: 
+  100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.tableau thead {
+  background:#286e65;
+  color: white;
+}
+
+.tableau th, 
+.tableau td {
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #000000;
+  font-size: 14px;
+}
+.tableau #delete-img {
+  width: 30px;
+
+
+}
+
+.tableau .padination{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  margin-top: 20px;
+}
+
+.tableau #next , #precedent{
+  padding: 6px;
+  border-radius: 7px;
+  background-color: #286e65;
+  color: white;
+  border: none;
+  font-size:17px;
+
+}
+#next:hover ,#precedent:hover {
+    transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 79, 73, 0.35);
+}
+
+.validation{
+  /* !important =>awlawiya */
+  border-color: red !important;
+
+}
+.ParDefault{
+  border-color: #286e65 !important;
+
+}
+
+
+@media (max-width:768px){
+  /*  wakha madirihach ghir f flexBox asalima 3adi 3lach=> 7it had  section  fiha element wahd howa div.form-all*/
+  section.formulaire{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: co ver;
+  }
+
+  .title-div {
+  flex-direction: row;
+  display: flex;
+  justify-content:space-between;
+  gap: 2%;
+
+  align-items: center;
+  
+}
+ .title-div #logo{
+
+  width: 30px;
+  height: 30px;
+ 
+
+}
+main h1{
+    
+    
+    font-size: 1.7rem;
+
+
+}
+}
+
+
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="title-div">
+        <h1>HealthCare</h1>
+        
+        <img src="Images/hospital-line (1).png" alt="logo" id="logo" />
+      </div>
+      <section class="formulaire">
+        <div class="form-all">
+          <div class="div-h2">
+            <h2>Formulaire de Pré-admission</h2>
+          </div>
+          <form action="#" id="form">
+            <label for="nom"
+              >Nom : <input type="text" name="nom" id="nom" /><br />
+            </label>
+
+            <label for="prn"
+              >Prénom : <input type="text" name="prenom" id="prn" /><br />
+            </label>
+
+            <label for="tl"
+              >Téléphone : <input type="tel" name="phone" id="tl" /><br />
+            </label>
+
+            <label for="mail"
+              >Email :
+              <input type="email" name="email" id="mail" />
+            </label>
+
+            <label for="motif">Motif :</label>
+            <textarea name="motif" id="motif"></textarea><br />
+
+            <label for="dt"
+              >Date souhaitée :
+              <input type="date" name="date" id="dt" value="" />
+            </label>
+
+            <input id="ajouter" type="submit" value="Ajouter la demande" />
+          </form>
+          <div class="msg">
+            <p id="message"></p>
+          </div>
+        </div>
+      </section>
+      <section class="tableau">
+        <h3>Liste des Demandes</h3>
+        <div class="div-table">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Téléphone</th>
+                <th>Email</th>
+                <th>Motif</th>
+                <th>Date souhaitée</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <div class="padination">
+            <button id="precedent">Précédent</button>
+            <button id="next">Suivant</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
