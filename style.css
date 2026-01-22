@@ -249,10 +249,10 @@ section.tableau {
   border-color: red !important;
 
 }
-.ParDefault{
+/* .ParDefault{
   border-color: #286e65 !important;
 
-}
+} */
 
 
 @media (max-width:768px){
